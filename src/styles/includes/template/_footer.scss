@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  height: 54px;
+  background: $mustard-2;
+  @include adaptive(768) {
+    height: auto;
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include adaptive(768) {
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px 0;
+    }
+  }
+
+  &-text {
+    font-size: 13px;
+    line-height: 220%;
+    color: $mustard;
+  }
+
+  &-link {
+    font-size: 13px;
+    line-height: 220%;
+    color: $white;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: $mustard;
+    }
+  }
+}

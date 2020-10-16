@@ -1,0 +1,40 @@
+<header class="section header-container">
+    <div class="header-slider swiper-container">
+        <div class="header-slider-wrapper swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="header-slider-image" src="/assets/img/slide1.jpg" alt="">
+                <div class="header-slider-description">
+                    <span data-swiper-parallax="-1000">Осуществляем монтаж трубопроводов</span>
+                    <span class="text-active" data-swiper-parallax="-2000">Нам доверяют крупнейшие мировые производители</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img class="header-slider-image" src="/assets/img/slide2.jpg" alt="">
+                <div class="header-slider-description">
+                    <span data-swiper-parallax="-1000">Реализуем комплексные проекты</span>
+                    <span class="text-active " data-swiper-parallax="-2000">Нам доверяют крупнейшие мировые производители</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-wrapper">
+        <div class="header-wrapper-column">
+            <a href="/" class="header-logo">
+                <img src="/assets/img/logo.png" alt="">
+            </a>
+            {% include '../template/menu.twig' %}
+            <div class="header-burger"></div>
+            <div class="header-right">
+                <div class="header-language">
+                    <a href="" class="header-language-item active">RU</a>
+                    <a href="" class="header-language-item">EN</a>
+                </div>
+                <div class="header-button-callback">
+                    <a href="#" data-modal="callback.html" class="button button-yellow header-button">Связаться</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include '../index/index-services.twig' %}
+</header>
+{% include '../template/menu-mobile.twig' %}

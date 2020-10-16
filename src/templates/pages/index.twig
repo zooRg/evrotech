@@ -1,0 +1,27 @@
+{% extends '../layouts/index.twig' %}
+{% set title = 'Главная' %}
+
+{% block styles %}
+
+    <link rel="stylesheet" href="/assets/css/index.css">
+
+{% endblock %}
+
+{% block scripts_top %}
+    <script defer="defer" src="https://api-maps.yandex.ru/2.1/?apikey=69a25c04-450e-46ba-bcdf-028331e0784d&amp;lang=ru_RU"></script>
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
+
+{% block page %}
+
+    {% include '../components/index/index-about.twig' %}
+    {% include '../components/index/index-recommendation.twig' %}
+    {% include '../components/index/index-company.twig' %}
+    {% include '../components/index/index-map.twig' %}
+
+{% endblock %}
+
+

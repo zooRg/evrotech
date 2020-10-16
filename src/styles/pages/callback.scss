@@ -1,0 +1,49 @@
+@import "../helpers/core";
+
+.callback {
+  padding: 60px 50px 60px 105px;
+  max-width: 509px;
+  @include adaptive(640) {
+    padding: 67px 50px 60px 70px;
+  }
+  @include adaptive(480) {
+    padding: 67px 20px 20px 20px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 55px;
+    background: url("../img/popup/bg.svg") no-repeat center;
+    background-size: cover;
+    @include adaptive(480) {
+      display: none;
+    }
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 110%;
+    margin-bottom: 26px;
+    max-width: 320px;
+  }
+  &__label {
+    margin-bottom: 9px;
+    &_area {
+      margin-bottom: 26px;
+    }
+  }
+  &-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 47px;
+    @include adaptive(480) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+  }
+}

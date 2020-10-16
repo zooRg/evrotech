@@ -1,0 +1,27 @@
+<section class="container section about-container">
+    <div class="about-wrapper">
+        <div class="about-left">
+            <img src="{{ about.image }}" alt="">
+        </div>
+        <div class="about-right">
+            <h2 class="title">O компании</h2>
+            <p class="about-text text">
+                Мы динамично развивающаяся инжиниринговая компания. Более 9 лет предоставляем услуги промышленного
+                инжиниринга для предприятий различных отраслей промышленности. Нам доверяют крупнейшие мировые
+                производители находящиеся на территории РФ в сфере пищевой, фармацевтической, химической и
+                нефтехимической промышленности.
+            </p>
+            <div class="about-features">
+                {% for item in about.features %}
+                    <div class="about-features-item">
+                        <span>{{ item.num }}</span>
+                        <span>{{ item.title }}</span>
+                    </div>
+                {% endfor %}
+                <div class="about-features-item about-button-callback">
+                    <a href="#" data-modal="callback.html" class="button button-dark about-button">Связаться</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

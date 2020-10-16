@@ -1,0 +1,97 @@
+.about {
+
+  &-left {
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 110px;
+    @include adaptive(1366) {
+      margin-right: 70px;
+      width: 35%;
+
+      & img {
+        display: block;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    @include adaptive(500) {
+      display: none;
+    }
+  }
+
+  &-right {
+
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    @include adaptive(500) {
+      flex-direction: column;
+    }
+  }
+
+  &-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      width: calc(100% / 3 - 20px);
+      color: $text;
+      @include adaptive(768) {
+        width: calc(100% / 2 - 20px);
+      }
+
+      & span:first-child {
+        font-weight: 800;
+        font-size: 96px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke: 1px #D9D9D9;
+        -webkit-text-fill-color: transparent;
+        z-index: 1;
+        @include adaptive(1024) {
+          font-size: 60px;
+        }
+      }
+
+      & span:last-child {
+        position: absolute;
+        left: 39px;
+        font-size: 12px;
+        line-height: 160%;
+        z-index: 2;
+        @include adaptive(1024) {
+          left: 20px;
+        }
+        @include adaptive(500) {
+          left: 26px;
+        }
+      }
+    }
+  }
+
+  &-button-callback {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 30px;
+    @include adaptive(1024) {
+      margin-left: 0;
+      margin-bottom: 18px;
+    }
+    @include adaptive(500) {
+      width: calc(100% / 2 - 20px);
+      margin-left: auto;
+    }
+  }
+
+  &-button {
+
+  }
+}

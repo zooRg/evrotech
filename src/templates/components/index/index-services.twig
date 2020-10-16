@@ -1,0 +1,12 @@
+<div class="services-container">
+    <div class="container services-wrapper">
+        <div class="services-items">
+            {% for item in services.items %}
+                {% embed '../template/services-item.twig' with {
+                    item: item
+                } %}
+                {% endembed %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

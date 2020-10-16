@@ -1,0 +1,106 @@
+.question {
+  padding: 100px 0;
+  background: url("../img/form/bg.jpg") center no-repeat $mustard;
+  background-size: cover;
+  @include adaptive(780) {
+    padding: 40px 0;
+  }
+  @include adaptive(480) {
+  }
+
+  &__wrapper {
+    max-width: 1062px;
+    margin-right: auto;
+  }
+
+  &__title {
+    margin-bottom: 6px;
+  }
+
+  &__subtitle {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 110%;
+    color: $white;
+    margin-bottom: 60px;
+    @include adaptive(780) {
+      margin-bottom: 20px;
+    }
+    @include adaptive(480) {
+      font-size: 24px;
+    }
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    &-main {
+      display: grid;
+      grid-template-columns: 33% 44% 200px;
+      grid-gap: 9px 3%;
+      margin-bottom: 32px;
+      @include adaptive(1340) {
+        grid-template-columns: 48% 48%;
+        grid-gap: 9px 4%;
+      }
+      @include adaptive(780) {
+        grid-template-columns: 100%;
+      }
+      @include adaptive(480) {
+        grid-gap: 10px;
+      }
+    }
+
+    &-inputs {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__label {
+      margin-bottom: 9px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .input-file__button {
+      margin-bottom: 7px;
+    }
+
+    &-buttons {
+      display: flex;
+      flex-direction: column;
+      @include adaptive(1340) {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+      }
+      @include adaptive(480) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &-consent {
+    font-size: 16px;
+    line-height: 150%;
+    color: $white;
+    @include adaptive(480) {
+      font-size: 12px;
+    }
+    &_gray {
+      color: $gray-1;
+    }
+  }
+
+  &-file {
+    &-list {
+      margin-bottom: 18px;
+      @include adaptive(480) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__button {
+    margin-right: 20px;
+  }
+}

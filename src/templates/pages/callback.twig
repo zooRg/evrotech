@@ -1,0 +1,38 @@
+{% extends '../layouts/blank.twig' %}
+
+{% block page %}
+    <section class="callback">
+        <link rel="stylesheet" href="/assets/css/callback.css">
+        <div class="title callback__title">
+            заказать
+            звонок
+        </div>
+        <form action="/" class="callback-form form-file">
+            <label class="label callback__label">
+                <input placeholder="Имя" type="text" class="input input_gray">
+            </label>
+            <label class="label callback__label">
+                <input placeholder="Телефон" type="text" class="input input_gray js-phone">
+            </label>
+            <label class="label callback__label_area">
+                <textarea cols="30" placeholder="Сообщение" rows="10" class="textarea input input_gray"></textarea>
+            </label>
+            <div class="callback-bottom">
+                <div class="input-file">
+                    <label class="input-file__label form-internal__file">
+                        <input type="file" class="visually-hidden js-question-file-input">
+                        <span class="input-file__button input-file__button_gray">
+                        Прикрепить документ
+                    </span>
+                    </label>
+                    <div class="question-file-list"></div>
+                </div>
+                <button href="#" class="button question__button button_dark">Отправить<span class="icon-arr-right toggle-right toggle-right_button"></span></button>
+            </div>
+            <div class="question-consent question-consent_gray">
+                Нажимая кнопку “оправить” вы соглашаетесь на обработку персональных данных
+            </div>
+        </form>
+        <script src="/assets/js/popup.js"></script>
+    </section>
+{% endblock %}

@@ -1,0 +1,62 @@
+.button {
+  width: 220px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: $mustard;
+  border: none;
+  text-decoration: none;
+  color: $textDark;
+  transition: all .3s ease-in-out;
+
+  @include adaptive(1440) {
+    width: 180px;
+    font-size: 14px;
+  }
+
+  @include adaptive(1366) {
+    height: 40px;
+  }
+
+  @include adaptive(1024) {
+    font-size: 14px;
+  }
+
+  @include adaptive(500) {
+    height: 32px;
+    width: 120px;
+    font-size: 12px;
+  }
+
+  &:hover {
+    color: $textDark;
+    background: $mustardHover;
+  }
+
+  &:active,
+  &:focus {
+    background: $mustardHover;
+  }
+
+  &-dark {
+    background: $mustard-2;
+    color: $white;
+
+    &:hover {
+      color: $white;
+      background: $mustardHover-2;
+    }
+
+    &:active,
+    &:focus {
+      background: $mustardHover-2;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<section class="container section company-container">
+    <div class="company-wrapper">
+        <div class="company-left">
+            <h2 class="title">Наши дочерние компании</h2>
+            <p class="company-text text">
+                Для повышения качества предоставляемых услуг нами были основаны 2 дочерние компании:
+            </p>
+        </div>
+        <div class="company-right">
+            {% for item in company.items %}
+                <a href="{{ item.href }}" class="company-item company-item-link">
+                    <img src="{{ item.img }}" alt="">
+                    <span class="company-item-description text">{{ item.description }}</span>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,171 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  overflow-x: hidden;
+  min-width: 320px;
+  min-height: 100vh;
+  color: $text;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 6px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $mustard;
+  border-radius: 0;
+  border: 0;
+  transition: all .2s ease-in-out;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  transition: all .2s ease-in-out;
+}
+
+a,
+label {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  @extend %container;
+  max-width: 1224px;
+}
+
+.container-left {
+  @extend %container-left;
+  max-width: 1260px;
+}
+
+header,
+main,
+footer {
+  flex-shrink: 0;
+}
+
+main {
+
+}
+
+footer {
+  margin-top: auto;
+}
+
+.list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background-color: rgba(#000, .3);
+  z-index: 80;
+}
+
+.fancybox-navigation {
+  position: static;
+}
+
+.text_white {
+  color: $white;
+}
+
+.section {
+  margin-bottom: 120px;
+
+  @include adaptive(1366) {
+    margin-bottom: 100px;
+  }
+  @include adaptive(1024) {
+    margin-bottom: 80px;
+  }
+  @include adaptive(480) {
+    margin-bottom: 60px;
+  }
+}
+
+.title {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $mustard-2;
+  margin-top: 0;
+  margin-bottom: 48px;
+
+  @include adaptive(1366) {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  @include adaptive(1024) {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  @include adaptive(768) {
+    margin-bottom: 20px;
+  }
+  @include adaptive(480) {
+    font-size: 20px;
+  }
+}
+
+.text {
+  font-size: 14px;
+  line-height: 180%;
+  color: $text;
+  @include adaptive(1024) {
+    font-size: 13px;
+  }
+}

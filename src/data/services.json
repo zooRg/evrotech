@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "href": "/",
+      "img": "/assets/img/services_back.jpg",
+      "class": "icon-service1",
+      "title": "Монтаж технологического оборудования"
+    },
+    {
+      "href": "/",
+      "img": "/assets/img/services_back.jpg",
+      "class": "icon-service2",
+      "title": "Монтаж технологических трубопроводов"
+    },
+    {
+      "href": "/",
+      "img": "/assets/img/services_back.jpg",
+      "class": "icon-service3",
+      "title": "Изготовление и монтаж металлоконструкций"
+    }
+  ]
+}

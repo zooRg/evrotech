@@ -1,0 +1,9 @@
+@import "../helpers/core";
+.place-map-item {
+  height: 530px;
+  width: 1180px;
+  @include adaptive(1200) {
+    width: 100%;
+    height: 100vh;
+  }
+}

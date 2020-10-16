@@ -1,0 +1,177 @@
+{
+	"about": {
+		"features": [
+			{
+				"num": "9",
+				"title": "Более 9 ти лет<br>на рынке"
+			},
+			{
+				"num": "4",
+				"title": "Работаем по 4-м<br>федеральным округам"
+			},
+			{
+				"num": "90",
+				"title": "Собственный штат<br>сотрудников более 90<br>человек"
+			},
+			{
+				"num": "2",
+				"title": "2 дочерние<br>компании"
+			},
+			{
+				"num": "570",
+				"title": "Более 570<br>реализованных<br>проектов"
+			},
+			{
+				"num": "50",
+				"title": "Более 50 контрагентов"
+			},
+			{
+				"num": "9001",
+				"title": "Сертифицированы<br>ISO 9001"
+			}
+		],
+		"image": "/assets/img/about.jpg"
+	},
+	"company": {
+		"items": [
+			{
+				"href": "/",
+				"img": "/assets/img/company1.jpg",
+				"description": "Изготовления металлоконструкций, нестандартного оборудования, резервуаров и емкостей различной сложности из нержавеющей стали."
+			},
+			{
+				"href": "/",
+				"img": "/assets/img/company2.jpg",
+				"description": "Изготовления металлоконструкций, нестандартного оборудования, резервуаров и емкостей различной сложности из нержавеющей стали."
+			}
+		]
+	},
+	"header": {
+		"menu": [
+			{
+				"href": "/",
+				"title": "О компании",
+				"sub": [
+					{
+						"href": "/",
+						"title": ""
+					}
+				]
+			},
+			{
+				"href": "/",
+				"title": "Услуги",
+				"sub": [
+					{
+						"href": "/",
+						"class": "icon-service1",
+						"title": "Монтаж технологического оборудования"
+					},
+					{
+						"href": "/",
+						"class": "icon-service2",
+						"title": "Монтаж технологических трубопроводов"
+					},
+					{
+						"href": "/",
+						"class": "icon-service3",
+						"title": "Изготовление и монтаж металлоконструкций"
+					},
+					{
+						"href": "/",
+						"class": "icon-service4",
+						"title": "Электромонтажные работы"
+					},
+					{
+						"href": "/",
+						"class": "icon-service5",
+						"title": "Автоматизация производственных процессов"
+					},
+					{
+						"href": "/",
+						"class": "icon-service6",
+						"title": "Промышленное проектирование"
+					}
+				]
+			},
+			{
+				"href": "/",
+				"title": "Портфолио",
+				"sub": [
+					{
+						"href": "/",
+						"title": ""
+					}
+				]
+			},
+			{
+				"href": "/",
+				"class": "selected",
+				"title": "Работа в компании"
+			},
+			{
+				"href": "/",
+				"title": "Контакты"
+			},
+			{
+				"href": "/",
+				"title": "дочерние предприятия",
+				"sub": [
+					{
+						"href": "/",
+						"title": ""
+					}
+				]
+			}
+		],
+		"phone": "+7 4742 71 96 96",
+		"email": "sales@etm.ltd"
+	},
+	"recommendation": {
+		"items": [
+			{
+				"href": "/assets/img/serf/1.png"
+			},
+			{
+				"href": "/assets/img/serf/2.png"
+			},
+			{
+				"href": "/assets/img/serf/3.png"
+			},
+			{
+				"href": "/assets/img/serf/4.png"
+			},
+			{
+				"href": "/assets/img/serf/5.png"
+			},
+			{
+				"href": "/assets/img/serf/5.png"
+			},
+			{
+				"href": "/assets/img/serf/5.png"
+			}
+		]
+	},
+	"services": {
+		"items": [
+			{
+				"href": "/",
+				"img": "/assets/img/services_back.jpg",
+				"class": "icon-service1",
+				"title": "Монтаж технологического оборудования"
+			},
+			{
+				"href": "/",
+				"img": "/assets/img/services_back.jpg",
+				"class": "icon-service2",
+				"title": "Монтаж технологических трубопроводов"
+			},
+			{
+				"href": "/",
+				"img": "/assets/img/services_back.jpg",
+				"class": "icon-service3",
+				"title": "Изготовление и монтаж металлоконструкций"
+			}
+		]
+	}
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, shrink-to-fit=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ title }}</title>
+  {% include '../components/template/head.twig' %}
+  <link rel="stylesheet" href="/assets/css/internal.css">
+  {% block styles %}
+
+  {% endblock %}
+</head>
+<body>
+<div class="loader">
+  <div class="loader-spin"></div>
+</div>
+{% include '../components/template/header.twig' %}
+<div class="overlay"></div>
+<main class="main">
+  <div class="internal-header">
+    <div class="internal-header-img">
+      <img class="img img_cover" src="/assets/img/pages/{{ img }}.jpg" alt="">
+    </div>
+    <div class="container">
+      <div class="wrapper internal-header__wrapper">
+        <h1 class="title title_page">{{ title }}</h1>
+        <div class="internal-header-description">
+          <p>
+            {{ description }}
+          </p>
+          <p>
+            {{ descriptionSecond }}
+          </p>
+        </div>
+        {% include '../components/template/breadcrumbs.twig' %}
+      </div>
+    </div>
+  </div>
+  {% block page %}{% endblock %}
+</main>
+{% include '../components/template/footer.twig' %}
+{% include '../components/template/popup.twig' %}
+{% include '../components/template/footer-scripts.twig' %}
+{% block scripts %}{% endblock %}
+</body>
+</html>

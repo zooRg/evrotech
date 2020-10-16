@@ -1,0 +1,23 @@
+//container
+%container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  @include adaptive(480) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+%container-left {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  width: 100%;
+  @include adaptive(480) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

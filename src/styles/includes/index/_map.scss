@@ -1,0 +1,94 @@
+.index-map {
+  &-container {
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: flex-start;
+    height: 362px;
+    @include adaptive(768) {
+      height: auto;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &-left {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: auto;
+    max-width: 389px;
+    margin-right: 106px;
+    @include adaptive(1024) {
+      max-width: 300px;
+      margin-right: 70px;
+    }
+    @include adaptive(768) {
+      max-width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  &-title {
+    margin-top: 48px;
+    @include adaptive(768) {
+      margin-top: 0;
+    }
+  }
+
+  &-stylish {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &-item {
+    display: flex;
+    font-family: $font-main;
+    padding: 0 0 0 40px;
+    margin-bottom: 16px;
+
+    & .icon-mail::before {
+      font-size: 10px;
+    }
+
+    & .icon-phone::before {
+      font-size: 11px;
+    }
+  }
+
+  &-icon {
+    position: absolute;
+    left: 0;
+    top: 5px;
+
+    &:first-child {
+      top: 7px;
+    }
+
+    &::before {
+      color: $textDark;
+    }
+  }
+
+  &-right {
+    position: absolute;
+    display: block;
+    width: 55vw;
+    max-width: 1050px;
+    height: 100%;
+    left: calc(389px + 106px);
+    @include adaptive(1024) {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      left: 0;
+    }
+    @include adaptive(768) {
+      height: 300px;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+// Font
+@mixin fonts($font-family, $font-name, $font-weight, $font-style) {
+  @if $font-style == "italic" {
+    @font-face {
+      font-family: $font-family;
+      src: url("../fonts/#{$font-name}-#{$font-weight}i.woff2") format("woff2"),
+      url("../fonts/#{$font-name}-#{$font-weight}i.woff") format("woff");
+      font-weight: $font-weight;
+      font-style: $font-style;
+      font-display: swap;
+    }
+  } @else {
+    @font-face {
+      font-family: $font-family;
+      src: url("../fonts/#{$font-name}-#{$font-weight}.woff2") format("woff2"),
+      url("../fonts/#{$font-name}-#{$font-weight}.woff") format("woff");
+      font-weight: $font-weight;
+      font-style: $font-style;
+      font-display: swap;
+    }
+  }
+}
+
+//Adaptive
+@mixin adaptive($media-width) {
+  @media screen and (max-width: #{$media-width}px) {
+    @content;
+  }
+}
+
+@mixin isIe() {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+
+@mixin isGridLayout() {
+  @supports (grid-column-gap: 15px) and (grid-row-gap: 15px) and (display: grid) {
+    @content;
+  }
+}
+
+//placeholder
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@mixin Oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+@mixin icon-pseudo($icon-name) {
+  content: $icon-name;
+  font-family: $icomoon-font-family;
+  font-weight: 400;
+}
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+
+@mixin columnBreak() {
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+}
+
+
+@function darken($color, $percent) {
+  @return adjust_color($color, $lightness: -$percent);
+}
+
+@function mix_alpha($color, $opacity) {
+  $opacity: 1 - $opacity;
+  @return adjust_color($color, $alpha: -$opacity);
+}

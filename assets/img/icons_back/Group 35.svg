@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" version="1.1">
+    <path fill="#45476f" fill-opacity="1" fill-rule="nonzero" stroke="none" stroke-opacity="1" stroke-width="1"
+          stroke-miterlimit="4" stroke-dashoffset="0"
+          d="M.5.5V7h1V1.5H7v-1H.5zM.5 15v6.5H7v-1H1.5V15h-1zM15 .5v1h5.5V7h1V.5H15zM20.5 15v5.5H15v1h6.5V15h-1zM7 7v8h8V7H7zm1 1h6v6H8V8z"
+          color-interpolation="sRGB" letter-spacing="normal" word-spacing="normal" writing-mode="lr-tb" direction="ltr"
+          dominant-baseline="auto" baseline-shift="baseline" text-anchor="start" white-space="normal"
+          clip-rule="nonzero" display="inline" overflow="visible" visibility="visible"
+          style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal"
+          color-interpolation-filters="linearRGB" solid-color="#000" solid-opacity="1" vector-effect="none" color="#000"
+          font-style="normal" font-variant="normal" font-weight="400" font-stretch="normal" stroke-linecap="butt"
+          stroke-linejoin="miter" font-size="medium" font-family="sans-serif" text-decoration="none"
+          color-rendering="auto" image-rendering="auto" shape-rendering="auto" text-rendering="auto" stop-color="#000"
+          stop-opacity="1" opacity="1"/>
+</svg>
