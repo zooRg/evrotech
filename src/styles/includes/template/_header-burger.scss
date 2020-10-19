@@ -2,21 +2,22 @@
   display: none;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   background: #f1f6fc;
-  width: 50px;
-  height: 50px;
-  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
   border: 0;
   cursor: pointer;
   color: #000;
   position: relative;
   @include adaptive(1200) {
     display: flex;
+    order: 1;
   }
-  @include adaptive(768) {
-    width: 36px;
-    height: 36px;
-    margin-left: 0;
+  @include adaptive(500) {
+    width: 32px;
+    height: 32px;
   }
 
   &::before,
@@ -27,31 +28,32 @@
     height: 2px;
     left: 50%;
     transition: all .75s;
-    width: 20px;
+    width: 24px;
     transform: translateX(-50%);
-    @include adaptive(768) {
-      width: 14px;
+    @include adaptive(500) {
+      width: 18px;
     }
   }
 
   &::before {
-    box-shadow: currentColor 0 7px 0 0;
+    box-shadow: currentColor 0 8px 0 0;
     position: absolute;
-    top: 17px;
-    @include adaptive(768) {
-      top: 10px;
+    top: 11px;
+    @include adaptive(500) {
+      box-shadow: currentColor 0 7px 0 0;
+      top: 8px;
     }
   }
 
   &::after {
     position: absolute;
-    bottom: 17px;
-    width: 20px;
+    bottom: 11px;
+    width: 24px;
     left: 50%;
     transform: translateX(-50%);
-    @include adaptive(768) {
-      width: 14px;
-      bottom: 10px;
+    @include adaptive(500) {
+      width: 18px;
+      bottom: 8px;
     }
   }
 

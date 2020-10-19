@@ -1,0 +1,115 @@
+.contact-callback {
+  $parent: &;
+
+  &-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 343px;
+    text-decoration: none;
+    padding: 0 9px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 36px;
+      height: 36px;
+      opacity: 0;
+      background: $mustard;
+      pointer-events: none;
+      transition: all .3s ease-in-out;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 100%;
+      background: $mustard-2;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+
+    &:hover {
+
+      &::before {
+        opacity: 1;
+      }
+
+      #{$parent}-icon {
+        width: 30px;
+
+        &::before {
+          color: $mustard;
+        }
+      }
+    }
+  }
+
+  &-left {
+    display: flex;
+
+    &::before {
+      color: $textDark;
+      font-size: 58px;
+      display: block;
+      margin-right: 37px;
+    }
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+    font-family: $font-main;
+  }
+
+  &-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: $mustard-2;
+    margin-bottom: 8px;
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: $gray-1;
+  }
+
+  &-icon {
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 11px;
+    overflow: hidden;
+    width: 20px;
+    transition: all .3s ease-in-out;
+
+    &::before {
+      font-size: 10px;
+      display: inline-block;
+      transform: rotate(180deg);
+    }
+  }
+}

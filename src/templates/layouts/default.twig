@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{ title }}</title>
   {% include '../components/template/head.twig' %}
-  <link rel="stylesheet" href="/assets/css/internal.css">
   {% block styles %}
 
   {% endblock %}
@@ -16,31 +15,23 @@
 <div class="loader">
   <div class="loader-spin"></div>
 </div>
-{% include '../components/template/header.twig' %}
+{% include '../components/template/header-inner.twig' %}
 <div class="overlay"></div>
-<main class="main">
-  <div class="internal-header">
-    <div class="internal-header-img">
-      <img class="img img_cover" src="/assets/img/pages/{{ img }}.jpg" alt="">
-    </div>
-    <div class="container">
-      <div class="wrapper internal-header__wrapper">
-        <h1 class="title title_page">{{ title }}</h1>
-        <div class="internal-header-description">
-          <p>
-            {{ description }}
-          </p>
-          <p>
-            {{ descriptionSecond }}
-          </p>
-        </div>
-        {% include '../components/template/breadcrumbs.twig' %}
-      </div>
+<main class="main main-inner">
+  <div class="container">
+    {% include '../components/template/breadcrumbs.twig' %}
+  </div>
+  <div class="container">
+    <div class="wrapper internal-header__wrapper">
+      <h1 class="title title_page">{{ title }}</h1>
     </div>
   </div>
   {% block page %}{% endblock %}
 </main>
+<footer>
+{% include '../components/template/contact.twig' %}
 {% include '../components/template/footer.twig' %}
+</footer>
 {% include '../components/template/popup.twig' %}
 {% include '../components/template/footer-scripts.twig' %}
 {% block scripts %}{% endblock %}

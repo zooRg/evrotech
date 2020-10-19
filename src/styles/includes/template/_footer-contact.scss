@@ -1,0 +1,111 @@
+.footer-contact {
+  margin-top: 60px;
+
+  &-wrapper {
+    display: flex;
+    align-items: flex-start;
+    @include adaptive(1024) {
+      flex-direction: column;
+    }
+  }
+
+  &-items {
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+    @include adaptive(1024) {
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  &-stylish {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  &-item {
+    display: flex;
+    font-family: $font-main;
+    padding: 0 0 0 40px;
+    margin-bottom: 16px;
+
+    & .icon-mail::before {
+      font-size: 10px;
+    }
+
+    & .icon-phone::before {
+      font-size: 11px;
+    }
+
+    & .footer-link {
+      color: unset;
+    }
+  }
+
+  &-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: $mustard;
+    }
+
+    &.active {
+      color: $mustardHover;
+
+      &:hover {
+        color: $mustard;
+      }
+    }
+  }
+
+  &-icon {
+    position: absolute;
+    left: 0;
+    top: 5px;
+
+    &:first-child {
+      top: 7px;
+    }
+
+    &::before {
+      color: $textDark;
+    }
+  }
+
+  &-right {
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+    @include adaptive(1024) {
+      max-width: 100%;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    max-height: 100px;
+    @include adaptive(600) {
+      max-height: unset;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & .footer-contact-item {
+      @include adaptive(600) {
+        padding: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.main {
+
+  &-slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    max-width: 1914px;
+
+    &-wrapper {
+
+    }
+
+    & .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      @include adaptive(1366) {
+        justify-content: center;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 642px;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: linear-gradient(180deg, #293041 0%, rgba(41, 48, 65, 0) 112.03%);
+        z-index: 1;
+        pointer-events: none;
+        @include adaptive(1366) {
+          height: 442px;
+        }
+        @include adaptive(768) {
+          height: 342px;
+        }
+        @include adaptive(500) {
+          background: linear-gradient(180deg, rgba(41, 48, 65, 0.8) 0%, rgba(41, 48, 65, 0) 112.03%);
+          height: 100%;
+        }
+      }
+    }
+
+    &-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &-description {
+      position: absolute;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      top: 35%;
+      left: 20%;
+      z-index: 1;
+      @include adaptive(1366) {
+        left: 0;
+      }
+      @include adaptive(768) {
+        padding: 10px;
+      }
+
+      & span {
+        font-weight: 800;
+        font-size: 43px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $white;
+        z-index: 10;
+        @include adaptive(1366) {
+          font-size: 30px;
+        }
+        @include adaptive(768) {
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+
+        &.text-active {
+          text-transform: unset;
+          font-weight: bold;
+          font-size: 28px;
+          line-height: 140%;
+          background: $back;
+          padding: 4px 20px 10px 17px;
+          @include adaptive(1366) {
+            font-size: 20px;
+            padding: 6px 20px;
+          }
+          @include adaptive(768) {
+            font-size: 14px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}

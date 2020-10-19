@@ -1,0 +1,95 @@
+.input-field {
+  background: rgba(144, 147, 157, 0.17);
+  border: none;
+  color: $white;
+  padding: 16px 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 180%;
+  @include adaptive(1024) {
+    font-size: 12px;
+    padding: 14px 18px;
+    line-height: 100%;
+  }
+  @include adaptive(768) {
+    font-size: 11px;
+    padding: 10px 18px;
+    line-height: 100%;
+  }
+
+  &::placeholder {
+    color: $white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 180%;
+    @include adaptive(1024) {
+      font-size: 12px;
+    }
+    @include adaptive(768) {
+      font-size: 11px;
+    }
+  }
+}
+
+.input-area {
+  background: rgba(144, 147, 157, 0.17);
+  border: none;
+  color: $white;
+  padding: 16px 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 180%;
+  resize: none;
+  @include adaptive(1024) {
+    padding: 14px 18px;
+    font-size: 12px;
+  }
+  @include adaptive(768) {
+    padding: 10px 18px;
+    font-size: 11px;
+  }
+
+  &::placeholder {
+    color: $white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 180%;
+    @include adaptive(1024) {
+      font-size: 12px;
+    }
+    @include adaptive(768) {
+      font-size: 11px;
+    }
+  }
+}
+
+.input {
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 6px;
+    height: 100%;
+    background: $white;
+  }
+
+  &:focus::before {
+    background: $mustard;
+  }
+
+  &:hover::before {
+    background: $mustard;
+  }
+
+  &:active::before {
+    background: $mustard;
+  }
+}

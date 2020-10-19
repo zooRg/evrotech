@@ -1,179 +1,100 @@
 .header {
-  &-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  height: 55px;
+  width: 100%;
+  flex-grow: 1;
+  padding-top: 24px;
+  box-sizing: content-box;
+  z-index: 3;
+  transition: all .3s ease-in-out;
+  @include adaptive(1366) {
+    padding-top: 10px;
+    height: 50px;
   }
 
-  &-slider {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    max-width: 1914px;
+  &-inner {
+    padding-bottom: 20px;
+    background: #293040;
+    z-index: 99;
 
-    &-wrapper {
-
-    }
-
-    & .swiper-slide {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      @include adaptive(1366) {
-        justify-content: center;
-      }
-    }
-
-    &-image {
-      position: absolute;
-      display: block;
-      left: 0;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-
-    &-description {
-      position: static;
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-      padding-left: 21%;
-      @include adaptive(1366) {
-        padding-left: 0;
-      }
-      @include adaptive(768) {
-        padding: 10px;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 642px;
-        left: 0;
-        right: 0;
-        top: 0;
-        background: linear-gradient(180deg, #293041 0%, rgba(41, 48, 65, 0) 112.03%);
-        z-index: 1;
-        pointer-events: none;
-        @include adaptive(1366) {
-          height: 442px;
-        }
-        @include adaptive(768) {
-          height: 342px;
-        }
-        @include adaptive(500) {
-          background: linear-gradient(180deg, rgba(41, 48, 65, 0.8) 0%, rgba(41, 48, 65, 0) 112.03%);
-          height: 100%;
-        }
-      }
-
-      & span {
-        font-weight: 800;
-        font-size: 43px;
-        line-height: 140%;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: $white;
-        z-index: 10;
-        @include adaptive(1366) {
-          font-size: 30px;
-        }
-        @include adaptive(768) {
-          font-size: 14px;
-          margin-bottom: 5px;
-        }
-
-        &.text-active {
-          text-transform: unset;
-          font-weight: bold;
-          font-size: 28px;
-          line-height: 140%;
-          background: $back;
-          padding: 4px 20px 10px 17px;
-          @include adaptive(1366) {
-            font-size: 20px;
-            padding: 6px 20px;
-          }
-          @include adaptive(768) {
-            font-size: 14px;
-            padding: 10px;
-          }
-        }
-      }
-    }
-  }
-
-  &-wrapper {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    height: 55px;
-    width: 100%;
-    flex-grow: 1;
-    padding-top: 24px;
-    box-sizing: content-box;
-    z-index: 3;
-    transition: all .3s ease-in-out;
-    @include adaptive(1366) {
-      padding-top: 10px;
-      height: 50px;
-    }
-
-    &::after {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      width: 100vw;
-      height: 228px;
-      background: rgba(41, 48, 64, 0.5);
-      opacity: 0;
-      transition: all .3s ease-in-out;
-      pointer-events: none;
-      z-index: -1;
+    & .header-background::after {
+      height: 200px;
       @include adaptive(1200) {
         display: none;
       }
     }
 
-    &.blur {
+    & .header-background_dark::after {
+      background: rgba(41, 48, 64, 1);
+      @include adaptive(1200) {
+        display: none;
+      }
+    }
+  }
 
-      &::after {
-        opacity: 1;
+  &-background::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 228px;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    pointer-events: none;
+    z-index: -1;
+    @include adaptive(1200) {
+      display: none;
+    }
+  }
+
+  &-background_dark::after {
+    background: rgba(41, 48, 64, 0.5);
+  }
+
+  &-background {
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &.js-isFixed {
+    padding-bottom: 20px;
+    background: #293040;
+    z-index: 99;
+    @include adaptive(1366) {
+      padding: 10px 0;
+    }
+
+    & .header-background::after {
+      height: 200px;
+      @include adaptive(1200) {
+        display: none;
       }
     }
 
-    &.js-isFixed {
-      padding-bottom: 20px;
-      background: #293040;
-      z-index: 99;
-      @include adaptive(1366) {
-        padding: 10px 0;
-      }
-
-      &::after {
-        background: rgba(41, 48, 64, 1);
-        height: 200px;
-        @include adaptive(1200) {
-          display: none;
-        }
+    & .header-background_dark::after {
+      background: rgba(41, 48, 64, 1);
+      @include adaptive(1200) {
+        display: none;
       }
     }
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+    transition: all .3s ease-in-out;
   }
 
   &-wrapper-column {
@@ -194,12 +115,32 @@
   &-logo {
     display: flex;
     flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     @include adaptive(1250) {
       max-width: 120px;
       margin-right: 40px;
     }
+    @include adaptive(1200) {
+      max-width: 170px;
+    }
     @include adaptive(500) {
-      display: none;
+      max-width: 130px;
+      flex-shrink: 0;
+      margin-right: 0;
+    }
+    @include adaptive(400) {
+      max-width: 40px;
+      height: 40px;
+
+      & img {
+        display: block;
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left center;
+      }
     }
   }
 
@@ -298,19 +239,6 @@
 
     &.selected {
       color: $mustard;
-
-      &::before {
-        content: "";
-        position: absolute;
-        display: block;
-        top: -44px;
-        left: 0;
-        width: 100%;
-        height: 5px;
-        background: $mustard;
-        transition: all .3s ease-in-out;
-      }
-
     }
   }
 
@@ -342,7 +270,6 @@
 
     &-wrapper {
       display: flex;
-      align-items: flex-start;
       justify-content: space-between;
       padding: 0;
       margin: 0;
@@ -382,6 +309,9 @@
   &-right {
     display: flex;
     align-items: stretch;
+    @include adaptive(1200) {
+      margin-left: auto;
+    }
   }
 
   &-phone {
@@ -439,6 +369,9 @@
     @include adaptive(1440) {
       padding: 4px 7px;
       height: 40px;
+    }
+    @include adaptive(500) {
+      margin-left: 0;
     }
 
     &-item {

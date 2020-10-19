@@ -173,5 +173,69 @@
 				"title": "Изготовление и монтаж металлоконструкций"
 			}
 		]
+	},
+	"services_detail": {
+		"items": [
+			{
+				"href": "/",
+				"img": "/assets/img/detail1.jpg",
+				"title": "изоляционные работы;"
+			},
+			{
+				"href": "/",
+				"img": "/assets/img/detail2.jpg",
+				"title": "гидравлические испытания;"
+			},
+			{
+				"href": "/",
+				"img": "/assets/img/detail3.jpg",
+				"title": "технический осмотр трубопроводов, лаборатория;"
+			},
+			{
+				"href": "/",
+				"img": "/assets/img/detail4.jpg",
+				"title": "проведение механических испытаний сварных соединений."
+			}
+		]
+	},
+	"services_inner": {
+		"items": [
+			{
+				"href": "/",
+				"img": "/assets/img/services_back.jpg",
+				"class": "icon-service1 services-item-inner",
+				"title": "Монтаж технологического оборудования"
+			},
+			{
+				"href": "/",
+				"img": "/assets/img/services_back.jpg",
+				"class": "icon-service2 services-item-inner",
+				"title": "Монтаж технологических трубопроводов"
+			},
+			{
+				"href": "/",
+				"img": "/assets/img/services_back.jpg",
+				"class": "icon-service3 services-item-inner",
+				"title": "Изготовление и монтаж металлоконструкций"
+			},
+			{
+				"href": "/",
+				"img": "/assets/img/services_back.jpg",
+				"class": "icon-service4 services-item-inner",
+				"title": "электромонтажные работы"
+			},
+			{
+				"href": "/",
+				"img": "/assets/img/services_back.jpg",
+				"class": "icon-service5 services-item-inner",
+				"title": "автоматизация производственных процессов"
+			},
+			{
+				"href": "/",
+				"img": "/assets/img/services_back.jpg",
+				"class": "icon-service6 services-item-inner",
+				"title": "промышленное проектирование"
+			}
+		]
 	}
 }

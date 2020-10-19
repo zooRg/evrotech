@@ -1,0 +1,24 @@
+<section class="section partner-about">
+    <div class="partner-about-container">
+        <div class="container">
+            <div class="partner-about-wrapper">
+                <h2 class="partner-about-title title">Нас рекомендуют</h2>
+                <div class="partner-about-slides swiper-container">
+                    <div class="partner-about-items swiper-wrapper">
+                        {% for item in recommendation.items %}
+                            <a href="{{ item.href }}" data-fancybox="gallery" class="partner-about-item partner-about-link swiper-slide">
+                                <picture class="partner-about-item-img icon-search">
+                                    <img src="{{ item.href }}" alt="">
+                                </picture>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="partner-about-button">
+                    <div class="button-prev icon-Arrow-47"></div>
+                    <div class="button-next icon-Arrow-47"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

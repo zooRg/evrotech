@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?mslmp0');
-  src:  url('fonts/icomoon.eot?mslmp0#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?mslmp0') format('truetype'),
-    url('fonts/icomoon.woff?mslmp0') format('woff'),
-    url('fonts/icomoon.svg?mslmp0#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?wbyki8');
+  src:  url('fonts/icomoon.eot?wbyki8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?wbyki8') format('truetype'),
+    url('fonts/icomoon.woff?wbyki8') format('woff'),
+    url('fonts/icomoon.svg?wbyki8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-detail-icon .path1:before {
+  content: "\e910";
+  color: rgb(0, 0, 0);
+}
+.icon-detail-icon .path2:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(255, 230, 0);
+}
+.icon-callback1:before {
+  content: "\e90d";
+}
+.icon-callback2:before {
+  content: "\e90e";
+}
+.icon-callback3:before {
+  content: "\e90f";
+}
 .icon-Arrow-47:before {
   content: "\e90c";
   color: #333d54;

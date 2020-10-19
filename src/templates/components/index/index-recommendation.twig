@@ -1,25 +1,29 @@
-<section class="section recommendation-container">
-    <div class="recommendation-img">
-        <img src="/assets/img/recommendation.jpg" alt="">
-    </div>
-    <div class="container recommendation-wrapper">
-        <h2 class="recommendation-title title">Нас рекомендуют</h2>
-        <div class="recommendation-slides swiper-container">
-            <div class="recommendation-items swiper-wrapper">
-                {% for item in recommendation.items %}
-                    <a href="{{ item.href }}" data-fancybox="gallery" class="recommendation-item recommendation-link swiper-slide">
-                        <picture class="recommendation-item-img icon-search">
-                            <img src="{{ item.href }}" alt="">
-                        </picture>
-                    </a>
-                {% endfor %}
-            </div>
+<section class="section">
+    <div class="recommendation-container">
+        <div class="recommendation-img">
+            <img src="/assets/img/recommendation.jpg" alt="">
         </div>
-        <div class="recommendation-bottom">
-            <a href="/" class="recommendation-bottom-link">Смотреть все</a>
-            <div class="recommendation-button">
-                <div class="button-prev icon-Arrow-47"></div>
-                <div class="button-next icon-Arrow-47"></div>
+        <div class="container">
+            <div class="recommendation-wrapper">
+                <h2 class="recommendation-title title">Нас рекомендуют</h2>
+                <div class="recommendation-slides swiper-container">
+                    <div class="recommendation-items swiper-wrapper">
+                        {% for item in recommendation.items %}
+                            <a href="{{ item.href }}" data-fancybox="gallery" class="recommendation-item recommendation-link swiper-slide">
+                                <picture class="recommendation-item-img icon-search">
+                                    <img src="{{ item.href }}" alt="">
+                                </picture>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="recommendation-bottom">
+                    <a href="/" class="recommendation-bottom-link">Смотреть все</a>
+                    <div class="recommendation-button">
+                        <div class="button-prev icon-Arrow-47"></div>
+                        <div class="button-next icon-Arrow-47"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -1,0 +1,45 @@
+.section-about {
+  margin-bottom: 100px;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-left {
+    display: flex;
+    max-width: 392px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 60%;
+  }
+
+  &-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: $mustard-2;
+  }
+
+  &-text {
+    margin-top: 0;
+
+    &-title {
+      margin-top: 40px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 140%;
+      color: $mustard-2;
+
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "href": "/",
+      "img": "/assets/img/detail1.jpg",
+      "title": "изоляционные работы;"
+    },
+    {
+      "href": "/",
+      "img": "/assets/img/detail2.jpg",
+      "title": "гидравлические испытания;"
+    },
+    {
+      "href": "/",
+      "img": "/assets/img/detail3.jpg",
+      "title": "технический осмотр трубопроводов, лаборатория;"
+    },
+    {
+      "href": "/",
+      "img": "/assets/img/detail4.jpg",
+      "title": "проведение механических испытаний сварных соединений."
+    }
+  ]
+}

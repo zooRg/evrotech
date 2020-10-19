@@ -62,7 +62,6 @@
 
   &-items {
     display: flex;
-    align-items: flex-start;
     width: 100%;
   }
 
@@ -98,7 +97,6 @@
 
   &-link {
     display: flex;
-    align-items: flex-start;
     height: auto !important;
 
     & img {

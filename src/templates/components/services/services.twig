@@ -1,0 +1,27 @@
+<section class="section services services-inner">
+    <div class="services-background">
+        <img src="/assets/img/services_back2.jpg" alt="">
+    </div>
+    <div class="container">
+        <div class="section-inner">
+            <div class="services-wrapper">
+                <div class="services-items services-items-inner">
+                    {% for item in services_inner.items %}
+                        {% embed '../template/services-item.twig' with {
+                            item: item
+                        } %}
+                        {% endembed %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <p class="services-text text">
+            Преимуществом компании «Евротехмонтаж» является комплексное оказание услуг от проектирования до
+            проведения ПНР. Обращаясь к нам, вы не ломаете голову над тем как организовать работу нескольких
+            подрядных организаций. Штат собственных сотрудников в указанных направлениях позволяет качественно,
+            быстро и самое главное организованно выполнять поставленные задачи.
+            Мы работаем – Вы отдыхаете.
+        </p>
+    </div>
+</section>

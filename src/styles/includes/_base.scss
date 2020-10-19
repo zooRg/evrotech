@@ -92,14 +92,47 @@ main {
 
 }
 
+.main-inner {
+  margin-top: calc(115px + 54px);
+
+  @include adaptive(1366) {
+    margin-top: calc(115px + 24px);
+  }
+  @include adaptive(768) {
+    margin-top: calc(115px);
+  }
+}
+
 footer {
   margin-top: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .list-unstyled {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+.list-styled {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  &-item {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #FFE812;
+      margin-right: 21px;
+    }
+  }
 }
 
 .overlay {
@@ -133,6 +166,18 @@ footer {
   @include adaptive(480) {
     margin-bottom: 60px;
   }
+
+  &-inner {
+    margin-bottom: 0;
+    padding-bottom: 80px;
+
+    @include adaptive(1366) {
+      padding-bottom: 60px;
+    }
+    @include adaptive(1024) {
+      padding-bottom: 40px;
+    }
+  }
 }
 
 .title {
@@ -158,6 +203,23 @@ footer {
   }
   @include adaptive(480) {
     font-size: 20px;
+  }
+
+  &_page {
+    margin-bottom: 80px;
+
+    @include adaptive(1366) {
+      margin-bottom: 40px;
+    }
+    @include adaptive(1024) {
+      margin-bottom: 30px;
+    }
+    @include adaptive(768) {
+      margin-bottom: 20px;
+    }
+    @include adaptive(480) {
+      font-size: 20px;
+    }
   }
 }
 

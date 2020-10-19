@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "href": "/",
+      "img": "/assets/img/services_back.jpg",
+      "class": "icon-service1 services-item-inner",
+      "title": "Монтаж технологического оборудования"
+    },
+    {
+      "href": "/",
+      "img": "/assets/img/services_back.jpg",
+      "class": "icon-service2 services-item-inner",
+      "title": "Монтаж технологических трубопроводов"
+    },
+    {
+      "href": "/",
+      "img": "/assets/img/services_back.jpg",
+      "class": "icon-service3 services-item-inner",
+      "title": "Изготовление и монтаж металлоконструкций"
+    },
+    {
+      "href": "/",
+      "img": "/assets/img/services_back.jpg",
+      "class": "icon-service4 services-item-inner",
+      "title": "электромонтажные работы"
+    },
+    {
+      "href": "/",
+      "img": "/assets/img/services_back.jpg",
+      "class": "icon-service5 services-item-inner",
+      "title": "автоматизация производственных процессов"
+    },
+    {
+      "href": "/",
+      "img": "/assets/img/services_back.jpg",
+      "class": "icon-service6 services-item-inner",
+      "title": "промышленное проектирование"
+    }
+  ]
+}

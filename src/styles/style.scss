@@ -2,17 +2,29 @@
 
 @import "includes/base";
 
+@import "includes/index/main-slider";
 @import "includes/index/services";
 @import "includes/index/about";
 @import "includes/index/recommendation";
 @import "includes/index/company";
 @import "includes/index/map";
 
+@import "includes/contact/contact-callback";
+@import "includes/contact/contact-members";
+@import "includes/contact/contact-form";
+
+@import "includes/services/srvices-detail";
+
+@import "includes/about/about";
+@import "includes/about/partner";
+
 @import "includes/components/button";
+@import "includes/components/input";
 
 @import "includes/template/header";
 @import "includes/template/header-burger";
 @import "includes/template/burger-menu";
 @import "includes/template/footer";
+@import "includes/template/footer-contact";
 @import "includes/template/popup";
 @import "includes/template/breadcrumbs";

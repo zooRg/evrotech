@@ -4,9 +4,8 @@ import { CSSPlugin } from 'gsap/CSSPlugin';
 
 gsap.registerPlugin(CSSPlugin);
 
-import './index';
+import './modules/header'
 import './modules/menu';
-import './modules/contacts-map';
 import './modules/overlay';
 import './modules/sliders';
 import toggle        from './modules/toggle';
@@ -28,13 +27,16 @@ document.addEventListener('DOMContentLoaded', () =>
 
 const HeaderToFixedEnum = {
 	fixedItemsEnum: {
-		MAIN_WRAPPER: document.querySelector(`.header-wrapper`)
+		MAIN_WRAPPER: document.querySelector(`.js-addFixed`)
 	}
 };
 
 document.addEventListener('DOMContentLoaded', () =>
 {
-	new fixedMenu(HeaderToFixedEnum);
+	if (document.querySelectorAll(`.js-addFixed`).length)
+	{
+		new fixedMenu(HeaderToFixedEnum);
+	}
 });
 
 
