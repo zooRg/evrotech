@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "img": "/assets/img/portfolio1.jpg",
+      "title": "монтаж технологического оборудования"
+    },
+    {
+      "img": "/assets/img/portfolio2.jpg",
+      "title": "монтаж трубопрободов"
+    },
+    {
+      "img": "/assets/img/portfolio3.jpg",
+      "title": "Изготовление и монтаж металлоконструкций"
+    },
+    {
+      "img": "/assets/img/portfolio4.jpg",
+      "title": "электромонтаж"
+    },
+    {
+      "img": "/assets/img/portfolio5.jpg",
+      "title": "автоматизации"
+    },
+    {
+      "img": "/assets/img/portfolio6.jpg",
+      "title": "Промышленное проектирование"
+    }
+  ]
+}

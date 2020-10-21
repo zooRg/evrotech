@@ -3,7 +3,9 @@
   margin-bottom: 0;
 
   &-inner {
-    padding-bottom: 0;
+    @include adaptive(768) {
+      padding-bottom: 0;
+    }
   }
 
   &-background {
@@ -118,10 +120,12 @@
     background: $white;
     padding: 58px 35px;
     text-decoration: none;
+    @include adaptive(768) {
+      align-items: center;
+    }
     @include adaptive(500) {
       padding: 20px 16px;
       border: 1px solid $gray-3;
-      align-items: center;
       min-height: 150px;
     }
 
@@ -130,11 +134,14 @@
       border: 1px solid transparent;
       border-right: 1px solid $gray-3;
       border-bottom: 1px solid $gray-3;
+      @include adaptive(1200) {
+        padding: 80px 34px;
+      }
       @include adaptive(900) {
-        padding: 60px 34px;
+        padding: 50px 34px;
       }
       @include adaptive(768) {
-        padding: 80px 54px;
+        padding: 60px 34px;
       }
       @include adaptive(576) {
         padding: 40px 34px;
@@ -183,13 +190,13 @@
       }
       @include adaptive(768) {
         font-size: 12px;
+        text-align: center;
       }
       @include adaptive(500) {
         text-align: center;
       }
       @include adaptive(400) {
         font-size: 10px;
-        text-align: center;
       }
     }
 

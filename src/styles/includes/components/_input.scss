@@ -33,6 +33,17 @@
   }
 }
 
+.input_gray {
+  background: #F4F4F4;
+  color: black;
+  width: 100%;
+  border-bottom: 1px solid #FFE600;
+
+  &::placeholder {
+    color: black;
+  }
+}
+
 .input-area {
   background: rgba(144, 147, 157, 0.17);
   border: none;

@@ -1,0 +1,18 @@
+<section class="section section-vacansies">
+    <div class="container">
+        <div class="section-vacansies-wrapper">
+            <h2 class="title title_page">Актуальные вакансии</h2>
+            <div class="section-vacansies-items">
+                {% for item in vacansies.items %}
+                <a href="{{ item.href }}" class="section-vacansies-item">
+                    <div class="section-vacansies-item-link">{{ item.title }}</div>
+                    <div class="section-vacansies-item-right">
+                        <div class="section-vacansies-item-text">Отправить резюме</div>
+                        <div class="section-vacansies-item-icon {{ item.class }}"></div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

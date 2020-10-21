@@ -1,23 +1,45 @@
 <section class="section partner-about">
-    <div class="partner-about-container">
-        <div class="container">
-            <div class="partner-about-wrapper">
-                <h2 class="partner-about-title title">Нас рекомендуют</h2>
+    <div class="container">
+        <div class="partner-about-wrapper">
+            <h2 class="partner-about-title title">партнеры о нас</h2>
+
+            <div class="partner-about-body">
+
+                <div class="partner-about-left button-prev icon-Arrow-47"></div>
+
                 <div class="partner-about-slides swiper-container">
                     <div class="partner-about-items swiper-wrapper">
                         {% for item in recommendation.items %}
-                            <a href="{{ item.href }}" data-fancybox="gallery" class="partner-about-item partner-about-link swiper-slide">
-                                <picture class="partner-about-item-img icon-search">
-                                    <img src="{{ item.href }}" alt="">
-                                </picture>
-                            </a>
+                            <div class="partner-about-item swiper-slide">
+
+                                <a href="{{ item.href }}" data-fancybox="gallery"
+                                   class="partner-about-item-link partner-about-link ">
+                                    <picture class="partner-about-item-img icon-search">
+                                        <img src="{{ item.href }}" alt="">
+                                    </picture>
+                                </a>
+
+                                <div class="partner-about-description">
+                                    <span>ООО «лЭМ УЭСТОН БЕЛАЯ ДАЧА»</span>
+                                    <p class="text partner-about-text">
+                                        ООО «Лэм Уэстон Белая Дача» в лице Нач. ПТО Желатаева Е.С. выражает
+                                        благодарность ООО «Евротехмонтаж»
+                                        за большой вклад в реализацию инвестиционных проектов 2019г., обеспечение
+                                        качественного т оперативного выполнениия работ на объектах ОО «Лэм Уэстон Белая
+                                        Дача»
+                                    </p>
+                                    <p class="text partner-about-text">
+                                        Большое спасибо за отличную работу!
+                                    </p>
+                                </div>
+
+                            </div>
                         {% endfor %}
                     </div>
                 </div>
-                <div class="partner-about-button">
-                    <div class="button-prev icon-Arrow-47"></div>
-                    <div class="button-next icon-Arrow-47"></div>
-                </div>
+
+                <div class="partner-about-right button-next icon-Arrow-47"></div>
+
             </div>
         </div>
     </div>

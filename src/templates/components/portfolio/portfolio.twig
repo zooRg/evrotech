@@ -1,0 +1,17 @@
+<section class="section section-potfolio">
+    <div class="container">
+        <div class="section-potfolio-wrapper">
+            <div class="section-potfolio-items">
+                {% for item in portfolio.items %}
+                <a href="{{ item.img }}" class="section-potfolio-item" data-fancybox="gallery">
+                    <div class="section-potfolio-img">
+                        <img src="{{ item.img }}" alt="{{ item.title }}">
+                        <span class="section-potfolio-icon icon icon-vacancies"></span>
+                    </div>
+                    <div class="section-potfolio-name text">{{ item.title }}</div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

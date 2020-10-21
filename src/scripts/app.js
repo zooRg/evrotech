@@ -7,7 +7,6 @@ gsap.registerPlugin(CSSPlugin);
 import './modules/header'
 import './modules/menu';
 import './modules/overlay';
-import './modules/sliders';
 import toggle        from './modules/toggle';
 import fixedMenu     from './modules/fixedMenu';
 import popupHelper   from './modules/popupHelper';

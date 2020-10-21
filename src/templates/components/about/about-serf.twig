@@ -1,0 +1,32 @@
+<section class="section about-sertificat">
+    <div class="container">
+        <div class="about-sertificat-wrapper">
+            <h2 class="about-sertificat-title title">Сертификаты</h2>
+
+            <div class="about-sertificat-body">
+
+                <div class="about-sertificat-left button-prev icon-Arrow-47"></div>
+
+                <div class="about-sertificat-slides swiper-container">
+                    <div class="about-sertificat-items swiper-wrapper">
+                        {% for item in recommendation.items %}
+                            <div class="about-sertificat-item swiper-slide">
+
+                                <a href="{{ item.href }}" data-fancybox="gallery"
+                                   class="about-sertificat-item-link about-sertificat-link ">
+                                    <picture class="about-sertificat-item-img icon-search">
+                                        <img src="{{ item.href }}" alt="">
+                                    </picture>
+                                </a>
+
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="about-sertificat-right button-next icon-Arrow-47"></div>
+
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 document.addEventListener('DOMContentLoaded', function()
 {
 	$('.header-menu-item-parent').hover(function()
@@ -6,5 +8,5 @@ document.addEventListener('DOMContentLoaded', function()
 	}, function()
 	{
 		$('.header-wrapper').removeClass('header-background_dark');
-	})
+	});
 });

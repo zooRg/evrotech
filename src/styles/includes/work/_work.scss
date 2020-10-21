@@ -1,0 +1,126 @@
+.section-work {
+  margin-top: -120px;
+  margin-bottom: 0;
+  @include adaptive(1024) {
+    margin-top: -60px;
+  }
+  @include adaptive(768) {
+    margin-top: 0;
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include adaptive(768) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 60%;
+    margin-right: 125px;
+    @include adaptive(1024) {
+      margin-right: 65px;
+    }
+    @include adaptive(768) {
+      max-width: 100%;
+    }
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    max-width: 392px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    @include adaptive(1024) {
+      max-width: 300px;
+    }
+    @include adaptive(768) {
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+  }
+
+  &-text {
+    margin-top: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 160%;
+    color: $textDark;
+  }
+
+  &-position {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 140%;
+    color: $textDark;
+    margin: 24px 0;
+    @include adaptive(1024) {
+      font-size: 16px;
+    }
+    @include adaptive(768) {
+      margin: 12px 0;
+    }
+    @include adaptive(500) {
+      font-size: 14px;
+    }
+  }
+
+  &-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: $textDark;
+    margin-bottom: 40px;
+    @include adaptive(1024) {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+    @include adaptive(768) {
+      margin-bottom: 12px;
+    }
+    @include adaptive(500) {
+      font-size: 14px;
+    }
+  }
+
+  &-bottom {
+
+  }
+
+  &-phone {
+    margin-right: 34px;
+
+    &::before {
+      margin-right: 24px;
+      @include adaptive(768) {
+        margin-right: 12px;
+      }
+    }
+  }
+
+  &-mail {
+
+    &::before {
+      margin-right: 24px;
+      @include adaptive(768) {
+        margin-right: 12px;
+      }
+    }
+  }
+
+  &-link {
+    font-family: $font-main;
+    @include adaptive(768) {
+      font-size: 11px;
+    }
+  }
+}

@@ -69,8 +69,8 @@
   }
 
   &__close {
-    width: 67px;
-    height: 67px;
+    width: 57px;
+    height: 57px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,21 +80,21 @@
     transition: all .6s;
     cursor: pointer;
     z-index: 15;
-    background: $mustard;
-    color: #fff;
 
 
     &:hover {
       svg {
         transform: rotate(90deg);
         transform-origin: center;
+        fill: $mustardHover;
       }
     }
 
     & svg {
       transition: all .4s ease-in-out;
-      width: 23px;
-      height: 23px;
+      width: 13px;
+      height: 13px;
+      fill: #333D54;
     }
   }
 

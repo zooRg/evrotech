@@ -127,6 +127,34 @@
 		"phone": "+7 4742 71 96 96",
 		"email": "sales@etm.ltd"
 	},
+	"portfolio": {
+		"items": [
+			{
+				"img": "/assets/img/portfolio1.jpg",
+				"title": "монтаж технологического оборудования"
+			},
+			{
+				"img": "/assets/img/portfolio2.jpg",
+				"title": "монтаж трубопрободов"
+			},
+			{
+				"img": "/assets/img/portfolio3.jpg",
+				"title": "Изготовление и монтаж металлоконструкций"
+			},
+			{
+				"img": "/assets/img/portfolio4.jpg",
+				"title": "электромонтаж"
+			},
+			{
+				"img": "/assets/img/portfolio5.jpg",
+				"title": "автоматизации"
+			},
+			{
+				"img": "/assets/img/portfolio6.jpg",
+				"title": "Промышленное проектирование"
+			}
+		]
+	},
 	"recommendation": {
 		"items": [
 			{
@@ -235,6 +263,35 @@
 				"img": "/assets/img/services_back.jpg",
 				"class": "icon-service6 services-item-inner",
 				"title": "промышленное проектирование"
+			}
+		]
+	},
+	"vacansies": {
+		"items": [
+			{
+				"href": "#",
+				"class": "icon-Arrow-47",
+				"title": "Инженер-проектировщик"
+			},
+			{
+				"href": "#",
+				"class": "icon-Arrow-47",
+				"title": "Руководитель проекта"
+			},
+			{
+				"href": "#",
+				"class": "icon-Arrow-47",
+				"title": "Электрогазосварщик"
+			},
+			{
+				"href": "#",
+				"class": "icon-Arrow-47",
+				"title": "Инженер-сметчик"
+			},
+			{
+				"href": "#",
+				"class": "icon-Arrow-47",
+				"title": "Инженер по проектно-сметной работе"
 			}
 		]
 	}

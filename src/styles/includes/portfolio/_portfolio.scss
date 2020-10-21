@@ -1,0 +1,122 @@
+.section-potfolio {
+  $parent: &;
+  margin-bottom: 20px;
+  @include adaptive(500) {
+    margin-bottom: 0;
+  }
+
+  &-wrapper {
+    display: flex;
+    width: 100%;
+    padding-bottom: 54px;
+    @include adaptive(500) {
+      padding-bottom: 34px;
+    }
+  }
+
+  &-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 80px 24px;
+    width: 100%;
+    @include adaptive(1024) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 60px 24px;
+    }
+    @include adaptive(768) {
+      grid-gap: 50px 24px;
+    }
+    @include adaptive(500) {
+      grid-template-columns: 1fr;
+      grid-gap: 40px 0;
+    }
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+
+    &:hover {
+
+      #{$parent}-icon {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &-name {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-top: 24px;
+    padding-left: 20px;
+    @include adaptive(1366) {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    @include adaptive(768) {
+      font-size: 14px;
+      margin-top: 16px;
+    }
+    @include adaptive(600) {
+      font-size: 12px;
+      margin-top: 12px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: flex;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 1px;
+      background: #333D54;
+      margin-right: 20px;
+    }
+  }
+
+  &-icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 2;
+    background-color: $mustard;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+    @include adaptive(500) {
+      opacity: 1;
+    }
+
+    &::before {
+      font-size: 21px;
+    }
+  }
+}

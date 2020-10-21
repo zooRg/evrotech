@@ -231,3 +231,16 @@ footer {
     font-size: 13px;
   }
 }
+
+p:not([class]):last-child {
+  margin-bottom: 0;
+}
+
+.link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 140%;
+  text-decoration: none;
+  color: $textDark;
+}

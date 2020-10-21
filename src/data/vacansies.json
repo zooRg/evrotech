@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "href": "#",
+      "class": "icon-Arrow-47",
+      "title": "Инженер-проектировщик"
+    },
+    {
+      "href": "#",
+      "class": "icon-Arrow-47",
+      "title": "Руководитель проекта"
+    },
+    {
+      "href": "#",
+      "class": "icon-Arrow-47",
+      "title": "Электрогазосварщик"
+    },
+    {
+      "href": "#",
+      "class": "icon-Arrow-47",
+      "title": "Инженер-сметчик"
+    },
+    {
+      "href": "#",
+      "class": "icon-Arrow-47",
+      "title": "Инженер по проектно-сметной работе"
+    }
+  ]
+}

@@ -3,6 +3,8 @@
         <div class="contact-members">
             <div class="contact-members-sliders swiper-container">
                 <div class="contact-members-items swiper-wrapper">
+
+                    {% for i in 0..2 %}
                     <div class="contact-members-item swiper-slide">
                         <div class="contact-members-left">
                             <img src="/assets/img/member.jpg" alt="">
@@ -20,56 +22,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="contact-members-item">
-                        <div class="contact-members-left">
-                            <img src="/assets/img/member.jpg" alt="">
-                        </div>
-                        <div class="contact-members-right">
-                            <span class="contact-members-position">Генеральный директор</span>
-                            <span class="contact-members-name">Ильичев Дмитрий Владимирович</span>
-                            <div class="contact-members-bottom">
-                                <a href="tel:+79525979752" class="contact-members-phone icon-phone">
-                                    <span class="contact-members-link">+7 (952) 597-97-52</span>
-                                </a>
-                                <a href="mailto:idv@etm.ltd" class="contact-members-mail icon-mail">
-                                    <span class="contact-members-link">idv@etm.ltd</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-members-item">
-                        <div class="contact-members-left">
-                            <img src="/assets/img/member.jpg" alt="">
-                        </div>
-                        <div class="contact-members-right">
-                            <span class="contact-members-position">Генеральный директор</span>
-                            <span class="contact-members-name">Ильичев Дмитрий Владимирович</span>
-                            <div class="contact-members-bottom">
-                                <a href="tel:+79525979752" class="contact-members-phone icon-phone">
-                                    <span class="contact-members-link">+7 (952) 597-97-52</span>
-                                </a>
-                                <a href="mailto:idv@etm.ltd" class="contact-members-mail icon-mail">
-                                    <span class="contact-members-link">idv@etm.ltd</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
+
                 </div>
-                <div class="swiper-scrollbar"></div>
+                <div class="contact-members-pagination swiper-pagination"></div>
             </div>
         </div>
     </div>
-    <script>
-
-
-	    const membersSwiper = new Swiper('.contact-members-sliders', {
-		    direction: 'vertical',
-		    slidesPerView: 2,
-		    spaceBetween: 30,
-		    mousewheel: true,
-		    scrollbar: {
-			    el: '.swiper-scrollbar',
-		    },
-	    });
-    </script>
 </section>
